@@ -1,0 +1,95 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #6a6969;
+}
+.container {
+  background-color: #1b1a1a;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.button_container {
+ display: grid;
+ grid-template-columns: repeat(4, 1fr);
+ grid-template-rows: repear(4, 1fr);
+ gap: 0.5rem;
+}
+
+.display {
+  background-color: #96969680;
+  height: 50px;
+  padding: 0 10px;
+  padding-top: 5px;
+  grid-column: span 4;
+  border-top: 2px solid #4e4c4c;
+  border-right: 2px solid #4e4c4c;  
+  border-bottom: 2px solid #6f6f6f;  
+  border-left: 2px solid #6f6f6f;  
+  box-shadow: inset 0px 0px 10px #030303;
+  font-size: 28px;
+  text-align: right;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.button {
+  width: 50px;
+  height:50px;
+  font-size: 16px;
+  background-color: #EBEBEB;
+  font-weight: bold;
+  border-radius: 4px;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #C1C1C1;
+  border-left: 2px solid #C1C1C1;
+  box-shadow: 0px 0px 2px #030303, inset 0px -20px 1px #cbc4c4;
+}
+
+.button:hover {
+  background-color: #ffba75;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #ae5700;
+  border-left: 2px solid #ae5700;
+  box-shadow: 0px 0px 2px #ffba75, inset 0px -20px 1px #ff8000;
+}
+
+.operations {
+  background-color: #434343;
+  border-top: 2px solid #c1c1c1;
+  border-right: 2px solid #c1c1c1;
+  border-bottom: 2px solid #181818;
+  border-left: 2px solid #181818;
+  box-shadow: 0px 0px 2px #030303, inset 0px -20px 1px #2E2E2E;
+  color: #fff;
+
+}
+.equal {
+  grid-row: span 2;
+  box-shadow: 0px 0px 2px #030303, inset 0px -50px 1px #2E2E2E;
+  height: auto;
+}
+.equal:hover {
+  box-shadow: 0px 0px 2px #ffba75, inset 0px -50px 1px #ff8000;
+}
+
+.clear_button {
+  color: #fff;
+  background-color: #D20000;
+  border-top: 2px solid #FF8484;
+  border-right: 2px solid #FF8484;
+  border-bottom: 2px solid #800000;
+  border-left: 2px solid #800000;
+  box-shadow: 0px 0px 2px #030303, inset 0px -20px 1px #B00000;
+}
+
